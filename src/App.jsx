@@ -1,30 +1,34 @@
 
 import './App.css'
-import HookForm from './Components/HookForm/HookForm'
-import ReuseableFrom from './Components/ReuseableForm/ReuseableFrom'
+import Grandpa from './Components/Grandpa/Grandpa'
+// import HookForm from './Components/HookForm/HookForm'
+// import ReuseableFrom from './Components/ReuseableForm/ReuseableFrom'
 // import RefFrom from './Components/RefForm/RefFrom'
 // import StatefulForm from './Components/StatefulForm/StatefulForm'
 // import SimpleForm from './Components/SimpleForm/SimpleForm'
 
 function App() {
 
-  const handleSignUpSubmit = data => {
-    console.log('Sign Up  data', data);
+  // const handleSignUpSubmit = data => {
+  //   console.log('Sign Up  data', data);
     
-    }
-  const handleUpdateProfile = data => {
-    console.log('Update Profile', data);
+  //   }
+  // const handleUpdateProfile = data => {
+  //   console.log('Update Profile', data);
     
-    }
+  //   }
 
   return (
     <>
       <h1>Form Master</h1>
+
+      <Grandpa></Grandpa>
+
       {/* <SimpleForm></SimpleForm> */}
       {/* <StatefulForm></StatefulForm> */}
       {/* <RefFrom></RefFrom> */}
       {/* <HookForm></HookForm> */}
-      <ReuseableFrom 
+      {/* <ReuseableFrom 
       formTitle={'Sign UP'} 
       handleSubmit={handleSignUpSubmit}> 
       <div>
@@ -38,7 +42,7 @@ function App() {
       formTitle={'Profile Update'} 
       handleSubmit={handleUpdateProfile} 
       submitBtnText= 'Update'>
-      </ReuseableFrom>
+      </ReuseableFrom> */}
 
     </>
   )
